@@ -1,0 +1,4 @@
+logging:
+  level:
+    root: INFO
+  file.name: Logs/oldboy.log
