@@ -10,11 +10,11 @@ ________________________________________________________________________________
 
 | Стек:      | Тестирование:  | Документирование: |
 |------------|----------------|-------------------|
-| Java       | Testcontainers | Swagger           |
-| SpringBoot | JUnit          |                   |
-|            | AssertJ        |                   |
-|            | Mockito        |                   |
-|            | REST Assured   |                   |
+| Java       | [Testcontainers](https://github.com/JcoderPaul/NeoFlexTask/blob/master/src/test/java/me/oldboy/vaccalc/CalcAppTest.java) | Swagger           |
+| SpringBoot | [JUnit ](https://github.com/JcoderPaul/NeoFlexTask/blob/master/src/test/java/me/oldboy/vaccalc/service/CalcAmountServiceTest.java)         |                   |
+|            | [AssertJ](https://github.com/JcoderPaul/NeoFlexTask/blob/master/src/test/java/me/oldboy/vaccalc/service/CalcAmountServiceTest.java)        |                   |
+|            | [Mockito](https://github.com/JcoderPaul/NeoFlexTask/blob/master/src/test/java/me/oldboy/vaccalc/controler/CalcControllerWithMockTest.java)        |                   |
+|            | [REST Assured](https://github.com/JcoderPaul/NeoFlexTask/blob/master/src/test/java/me/oldboy/vaccalc/CalcAppTest.java)   |                   |
 
 ________________________________________________________________________________________________________________________                                                                                                                        
 #### Код покрыт тестами на: Class 100% (16/16), Method 90% (40/44), Line 98% (240/244)
