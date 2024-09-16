@@ -1,0 +1,42 @@
+plugins {
+    id "org.springframework.boot" version "3.2.3"
+    id "io.spring.dependency-management" version "1.1.4"
+    id "io.freefair.lombok" version "8.3"
+    id 'java'
+}
+
+apply from: 'version.gradle'
+
+group 'me.oldboy.vaccalc'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:${versions.springdoc}"
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    testImplementation "org.testcontainers:testcontainers:${versions.testcontainers}"
+    testImplementation "org.testcontainers:junit-jupiter:${versions.testcontainers}"
+    testImplementation "io.rest-assured:rest-assured:${versions.rest_assured}"
+
+    testImplementation "org.mockito:mockito-core:${versions.mockito}"
+    testRuntimeOnly "org.mockito:mockito-core:${versions.mockito}"
+    testImplementation "org.mockito:mockito-junit-jupiter:${versions.mockito}"
+    testImplementation "org.assertj:assertj-core:${versions.assertj}"
+    testRuntimeOnly "org.assertj:assertj-core:${versions.assertj}"
+}
+
+test {
+    useJUnitPlatform()
+}
